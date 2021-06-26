@@ -1,0 +1,224 @@
+//css=cascading stylesheet
+
+/* comment */
+******************
+convertion of hex values to rgb values
+www.webfx.com/web-design/hex-to-rgb
+*********************
+caniuse.com //it will display we will use that property or not
+//color
+websites-colours.neilorangepeel.com
+         materialui
+         bootstarp
+         css-TRICKS
+         randoma11y.com
+         colors.co
+
+#rrggbb 6characters
+rgb(255,255,255) white
+rgb(0%,0%,0%) black;
+
+hsl-hue saturation lightness
+hue-angle
+saturation-0%shade of gray
+hsla a-alpha
+
+***************************************
+//css selectors
+ type - h1{..}
+universal-*
+class-  .
+id- #
+
+//ctrl +/ for comment
+****************************************
+//specificity
+*
+type
+class
+id
+section p{} it is not override b class and id 
+!important  it overrides source order and specificity
+
+********************
+Pseudo class
+a:link
+a:visited
+a:focus{
+    outline: 1px solid black;
+}
+a:hover
+a:acive
+
+*************
+text-decoration:none;  //if we hover the link below underline will disappeare
+**********
+.btn:hover{
+    background:rgba(47,48,97,80%); //oppacity 80%
+    
+}
+***********************
+box model
+inline - <a></a> <span></span> <strong></strong>
+block - <p></p> <h1></h1> <section></section>
+
+display:inline-block;
+display:inline;
+display:block;
+
+bos properties
+width
+height
+padding
+margin
+border
+
+<length>
+px:pixel
+cm:centimeter
+mm:millimeter
+in:inch
+pc:pica(equal to 1/6 of an inch)
+pt:point(equal to 1/72 of an inch)
+width:1000px
+
+em represents inherited font-size of element
+rem  represents inherited font-size of root element
+
+padding:2px clockwise
+padding:2px 2px 2px 2px; top right bottom left
+padding:2px 2px top&bottom     right & left
+padding:2px 2px 2px top right & left bottom
+
+boarder
+boarder:2px solid red;   width style colors
+width- thin mediun thik
+style- none,hidden,dotted,dashed,solid,double,groove,ridge,inset,outset
+
+margin accept negative values but padding donot
+
+**********************************
+Typography -arranging type for readability and to engage and communicate with the reader.
+Typeface - a set of fonts,designed with common characteristics,composed of glyphs.
+
+font - Times New Roman
+       comic sans
+
+5 categories of Typeface
+script
+Decorative
+Monospace
+serif
+sans-serif
+
+####################cssfontstack.com
+web-safe fonts-arial,times new Roman
+
+font-weight :100 to 900
+100 light thin
+400-normal
+700-bold
+
+font-style
+italic oblique normal
+
+++++++++++++fontsquirrel.com
+++++++++++++css-tricks.com
+
+@font-face{
+    src:url()
+} //for font-family
+
+++++++++++++fonts.adobe.com
+++++++++++++fonts.google.com
+
+font-size
+absolute means fixed
+px-absolute,  whole no
+em-relative ,decimal 1em=16px(default)
+rem - root
+
+font:italic small-caps bold 24px/1.5 Helvetica, sans-serif
+
+*******************
+text-align:center
+**********************
+float:left,right,both //
+clear:both;//it become normal
+overflow:hidden,scroll,auto
+*****************
+clearfix:after{}
+display:flow-root;
+*************************
+html{
+    box-sizing:boarder-box;
+}
+*, *:before, *:after{
+    box-sizing:inherit;
+}
+*****************************
+position-
+fixed
+sticky
+absolute
+relative
+******************************
+stack index-//higher value it will come up
+z-index:200;
+*******************************
+Flexbox-distribution across a single axis
+Grid-Layouts with both rows and columns
+*******************************
+Flex container-the parent element
+flex items-the child elements
+********************************
+flex-directon = determines the direction of the main axis
+row
+row-reverse
+column
+column-reverse
+*******************
+flex-wrap = nowrap
+flex-wrap = wrap-reverse
+flex-flow = column wrap;
+*****************
+flex-properties =
+flex-basis - set initial size
+flex-grow - how expand if there is extra space
+flex-shrink - how shrink if there is not space
+flex:grow shrink basis
+flex: 0 1 100px;
+******************
+justify-content - aligns items on the main axis(horizontal)
+align-items = across axis
+**********************
+fraction unit:fr
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+
+repeat()
+grid-template-columns:repeat(3, 1fr);
+*******************
+gutters
+gap: 20px or 16% or calc(10% + 20px)
+*******************
+for grid
+https://www.mozilla.org/en-US/developer/css-grid/
+********************
+h1 + p{}  = it will apply to next p tag
+h1 ~ p{} = for next p tags after h1
+*****************************
+responsive-web-design
+
+https://allistapart.com/article/responsive-web-design/
+
+max-width:800px;
+width:85%;
+*******************
+images
+background-image:url();
+background-size:cover;
+background-position: top right;
+*************************
+screen all 
+@media screen {}
